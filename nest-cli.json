@@ -1,14 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "apps/nestjs-monorepo-prisma/src",
+  "sourceRoot": "apps/backend/src",
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/nestjs-monorepo-prisma/tsconfig.app.json"
+    "tsConfigPath": "apps/backend/tsconfig.app.json"
   },
   "monorepo": true,
-  "root": "apps/nestjs-monorepo-prisma",
+  "root": "apps/backend",
   "projects": {
     "auth": {
       "type": "application",
@@ -35,15 +35,6 @@
       "sourceRoot": "libs/core/src",
       "compilerOptions": {
         "tsConfigPath": "libs/core/tsconfig.lib.json"
-      }
-    },
-    "nestjs-monorepo-prisma": {
-      "type": "application",
-      "root": "apps/nestjs-monorepo-prisma",
-      "entryFile": "main",
-      "sourceRoot": "apps/nestjs-monorepo-prisma/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/nestjs-monorepo-prisma/tsconfig.app.json"
       }
     }
   }

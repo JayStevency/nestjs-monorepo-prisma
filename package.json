@@ -30,10 +30,10 @@
     "@nestjs/config": "^4.0.1",
     "@nestjs/core": "^11.0.11",
     "@nestjs/platform-express": "^11.0.11",
-    "@nestjs/swagger": "^7.3.0",
+    "@nestjs/swagger": "^11.0.6",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
-    "swagger-ui-express": "^5.0.0"
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",

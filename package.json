@@ -23,14 +23,23 @@
     "build:backend": "nest build backend",
     "start:backend": "node dist/apps/backend/main",
     "commit": "git-cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prisma:local": "NODE_ENV=local npx dotenv-flow npx prisma",
+    "prisma:dev": "NODE_ENV=dev dotenv-flow npx prisma",
+    "prisma:prod": "NODE_ENV=prod dotenv-flow npx prisma"
   },
   "dependencies": {
+    "@nestjs-cls/transactional": "^2.5.0",
+    "@nestjs-cls/transactional-adapter-prisma": "^1.2.16",
     "@nestjs/common": "^11.0.11",
     "@nestjs/config": "^4.0.1",
     "@nestjs/core": "^11.0.11",
     "@nestjs/platform-express": "^11.0.11",
     "@nestjs/swagger": "^11.0.6",
+    "@prisma/client": "^6.5.0",
+    "dotenv-flow": "^4.1.0",
+    "nestjs-cls": "^5.4.0",
+    "prisma-extension-pagination": "^0.7.5",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
     "swagger-ui-express": "^5.0.1"
